@@ -7,11 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWorldDll", "HelloWorld
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWorld", "HelloWorld\HelloWorld.vcxproj", "{441FB037-F70C-4A62-8593-90111EAC6232}"
 	ProjectSection(ProjectDependencies) = postProject
-		{F83F5A14-6DF6-42D7-A499-ED787FF440D6} = {F83F5A14-6DF6-42D7-A499-ED787FF440D6}
 		{1C3856A2-29D8-4459-BF02-B572CF5890D2} = {1C3856A2-29D8-4459-BF02-B572CF5890D2}
 	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cci_fDll", "..\WSP4_Examples\WSP4_Examples\Projects2008_64\cci_fDll\cci_fDll.vcxproj", "{F83F5A14-6DF6-42D7-A499-ED787FF440D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,14 +30,6 @@ Global
 		{441FB037-F70C-4A62-8593-90111EAC6232}.Release|Win32.ActiveCfg = Release|Win32
 		{441FB037-F70C-4A62-8593-90111EAC6232}.Release|Win32.Build.0 = Release|Win32
 		{441FB037-F70C-4A62-8593-90111EAC6232}.Release|x64.ActiveCfg = Release|Win32
-		{F83F5A14-6DF6-42D7-A499-ED787FF440D6}.Debug|Win32.ActiveCfg = Debug|Win32
-		{F83F5A14-6DF6-42D7-A499-ED787FF440D6}.Debug|Win32.Build.0 = Debug|Win32
-		{F83F5A14-6DF6-42D7-A499-ED787FF440D6}.Debug|x64.ActiveCfg = Debug|x64
-		{F83F5A14-6DF6-42D7-A499-ED787FF440D6}.Debug|x64.Build.0 = Debug|x64
-		{F83F5A14-6DF6-42D7-A499-ED787FF440D6}.Release|Win32.ActiveCfg = Release|Win32
-		{F83F5A14-6DF6-42D7-A499-ED787FF440D6}.Release|Win32.Build.0 = Release|Win32
-		{F83F5A14-6DF6-42D7-A499-ED787FF440D6}.Release|x64.ActiveCfg = Release|x64
-		{F83F5A14-6DF6-42D7-A499-ED787FF440D6}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

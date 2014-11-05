@@ -20,10 +20,12 @@ int main()
 		}
 		else
 		{
-			const double firstVariable = (double)3.0;
-			const double secondVariable = (double)4.0;
 			uReturnVal = pcci();
+			if (uReturnVal > 0)
+			{
+				return ERROR_SUCCESS;
+			}
 		}
 	}
-	return 0;
+      	return 0;
 }
