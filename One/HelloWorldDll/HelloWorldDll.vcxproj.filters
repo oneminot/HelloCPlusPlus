@@ -18,5 +18,13 @@
     <ClCompile Include="puts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MathFuncsDll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MathFuncsDll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
