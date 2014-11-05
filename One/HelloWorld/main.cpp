@@ -1,28 +1,28 @@
 #include <Windows.h>
 int main()
 {
-	typedef UINT(CALLBACK* LPFNDLLFUNC1)(DWORD, UINT);
-	HINSTANCE hDLL;               // Handle to DLL
-	LPFNDLLFUNC1 lpfnDllFunc1;    // Function pointer
-	DWORD dwParam1;
-	UINT  uParam2, uReturnVal;
+	typedef double(CALLBACK* MyAdd)(double, double);
+	HINSTANCE hDLL;
+	FARPROC pcci;
+	//MyAdd Add;
+	double uReturnVal;
 	LPCWSTR file = L"HelloWorldDll";
 
 	hDLL = LoadLibrary(file);
 	if (hDLL != NULL)
 	{
-		lpfnDllFunc1 = (LPFNDLLFUNC1)GetProcAddress(hDLL,
-			"Add");
-		if (!lpfnDllFunc1)
+		//Add = (MyAdd)GetProcAddress(hDLL, "Subtract");
+		pcci = GetProcAddress(hDLL, "kig");
+		if (!pcci)
 		{
-			// handle the error
 			FreeLibrary(hDLL);
 			return E_UNEXPECTED;
 		}
 		else
 		{
-			// call the function
-			uReturnVal = lpfnDllFunc1(2, 3);
+			const double firstVariable = (double)3.0;
+			const double secondVariable = (double)4.0;
+			uReturnVal = pcci();
 		}
 	}
 	return 0;

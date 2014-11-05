@@ -9,6 +9,12 @@
 /* variable to determine if the function is exported or not */
 
 __declspec (dllexport)
+double __cdecl kig(double a, double b)
+{
+	return a + b;
+}
+
+__declspec (dllexport)
 BOOL __cdecl cci_f (LPCTSTR fIn, LPCTSTR fOut, DWORD shift)
 /* Caesar cipher function  - Simple implementation
 *		fIn:		Source file pathname
