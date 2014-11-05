@@ -17,7 +17,7 @@ int main()
 		{
 			// handle the error
 			FreeLibrary(hDLL);
-			return ERROR_CALL_NOT_IMPLEMENTED;
+			return E_UNEXPECTED;
 		}
 		else
 		{
