@@ -79,7 +79,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="MathFuncsDll.cpp" />
-    <ClCompile Include="puts.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MathFuncsDll.h" />
