@@ -1,7 +1,7 @@
 #include <Windows.h>
 int main()
 {
-	typedef double(CALLBACK* MyAdd)(double, double);
+	double(__cdecl *MyAdd) (double, double);
 	HINSTANCE hDLL;
 	FARPROC pcci;
 	//MyAdd Add;
@@ -20,7 +20,8 @@ int main()
 		}
 		else
 		{
-			uReturnVal = pcci();
+			MyAdd = (double(__cdecl *)(double, double)) pcci;
+			uReturnVal = MyAdd(2.0, 3.0);
 			if (uReturnVal > 0)
 			{
 				return ERROR_SUCCESS;
