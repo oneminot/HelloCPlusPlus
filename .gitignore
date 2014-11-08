@@ -46,3 +46,5 @@ Temporary Items
 *.opensdf
 netbeans/MultiprocessSample/nbproject/private/
 netbeans/HelloNetbeans/nbproject/private/
+netbeans/MultiprocessSample/nbproject/
+netbeans/HelloNetbeans/nbproject/
