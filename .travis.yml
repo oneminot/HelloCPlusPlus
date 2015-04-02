@@ -2,4 +2,13 @@ language: cpp
 compiler:
   - gcc
   - clang
-script: ./Hello/makefile && make
+ script:
+  - cd Hello
+ notifications:
+  recipients:
+    - spam.kushal@gmail.com
+  email:
+    on_success: always
+    on_failure: always
+os:
+  - linux
