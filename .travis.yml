@@ -1,14 +1,8 @@
 language: cpp
-compiler:
-  - gcc
-  - clang
- script:
-  - cd Hello
- notifications:
-  recipients:
-    - spam.kushal@gmail.com
+compiler: g++
+notifications:
   email:
-    on_success: always
-    on_failure: always
+    recipients:
+      - spam.kushal@gmail.com
 os:
   - linux
