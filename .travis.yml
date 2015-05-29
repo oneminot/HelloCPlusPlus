@@ -4,5 +4,6 @@ notifications:
   email:
     recipients:
       - spam.kushal@gmail.com
+script: cd /src
 os:
   - linux
